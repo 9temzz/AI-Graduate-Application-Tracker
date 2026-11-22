@@ -18,6 +18,14 @@ Instead of manually updating a spreadsheet after every application confirmation,
 - **Routes uncertain or incomplete records** to a `Needs_Review` sheet.
 - **Uses a 65-second Wait node and 5 retry attempts** to reduce the impact of some API limits and temporary errors (not a guarantee of recovery).
 
+
+### n8n Workflow Architecture
+
+The workflow automatically processes incoming recruitment emails, classifies them using Google Gemini, checks for duplicate applications, and updates Google Sheets.
+
+![AI Graduate Application Tracker workflow](docs/workflow-overview.png)
+
+
 ## Workflow overview
 
 ```mermaid
