@@ -1,0 +1,21 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials/
+
+# Local n8n data and backups
+n8n_data/
+n8n-backup*/
+database.sqlite
+*.db
+
+# Private exports and logs
+raw-workflow-exports/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
