@@ -1,0 +1,83 @@
+{
+  "note": "All records below are fictional and for documentation only.",
+  "Applications": [
+    {
+      "application_id": "APP-DEMO-001",
+      "company": "Example Analytics Ltd",
+      "job_title": "Graduate Data Analyst",
+      "date_applied": "02/11/2026",
+      "source": "Email Automation",
+      "status": "Online Assessment",
+      "last_updated": "05/11/2026 10:20",
+      "ai_confidence": 0.98,
+      "match_key": "exampleanalyticsltddataanalyst",
+      "source_email_id": "DEMO-EMAIL-001"
+    },
+    {
+      "application_id": "APP-DEMO-002",
+      "company": "Sample Technology Group",
+      "job_title": "Graduate Technology Consultant",
+      "date_applied": "08/11/2026",
+      "source": "Email Automation",
+      "status": "Application Received",
+      "last_updated": "08/11/2026 15:30",
+      "ai_confidence": 0.97,
+      "match_key": "sampletechnologygrouptechnologyconsultant",
+      "source_email_id": "DEMO-EMAIL-003"
+    }
+  ],
+  "Email_Log": [
+    {
+      "email_id": "DEMO-EMAIL-001",
+      "received_at": "02/11/2026 09:00",
+      "sender": "careers@example.invalid",
+      "subject": "Your graduate analyst application",
+      "company": "Example Analytics Ltd",
+      "job_title": "Graduate Data Analyst",
+      "classification": "APPLICATION_CONFIRMATION",
+      "detected_status": "Application Received",
+      "ai_confidence": 0.98,
+      "application_id": "APP-DEMO-001",
+      "processed": "TRUE"
+    },
+    {
+      "email_id": "DEMO-EMAIL-002",
+      "received_at": "05/11/2026 10:20",
+      "sender": "careers@example.invalid",
+      "subject": "Online assessment invitation",
+      "company": "Example Analytics Ltd",
+      "job_title": "Graduate Data Analyst",
+      "classification": "ASSESSMENT_INVITATION",
+      "detected_status": "Online Assessment",
+      "ai_confidence": 0.99,
+      "application_id": "APP-DEMO-001",
+      "processed": "TRUE"
+    },
+    {
+      "email_id": "DEMO-EMAIL-003",
+      "received_at": "08/11/2026 15:30",
+      "sender": "recruitment@example.invalid",
+      "subject": "Application received - Graduate Technology Consultant",
+      "company": "Sample Technology Group",
+      "job_title": "Graduate Technology Consultant",
+      "classification": "APPLICATION_CONFIRMATION",
+      "detected_status": "Application Received",
+      "ai_confidence": 0.97,
+      "application_id": "APP-DEMO-002",
+      "processed": "TRUE"
+    }
+  ],
+  "Needs_Review": [
+    {
+      "email_id": "DEMO-EMAIL-004",
+      "received_at": "11/11/2026 12:45",
+      "sender": "recruiting@example.invalid",
+      "subject": "Update on your application",
+      "classification": "GENERAL_APPLICATION_UPDATE",
+      "detected_status": "Application Received",
+      "ai_confidence": 0.61,
+      "reason": "Missing job title",
+      "reviewed": "FALSE"
+    }
+  ]
+}
